@@ -1,8 +1,6 @@
-<p>book-collection works!</p>
 <div class="book-item" *ngFor="let book of books">
-    <p>{{book.volumeInfo.title}}
-        <span> by {{book.volumeInfo.authors}}</span>
-    </p>
+    <h3>Title: {{book.volumeInfo.title}}</h3>
+    <h4>Author: {{book.volumeInfo.authors}}</h4>
     <button (click)="remove.emit(book.id)" data-test="remove-button">
         Remove from Collection
     </button>
